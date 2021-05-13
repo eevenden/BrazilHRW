@@ -1,15 +1,29 @@
 body {
   background-color: white;
+  margin: 3;
+  padding: 3;
 }
-
 h1 {
   color: black;
   font-family: 	Courier New;
+  font-size: 2.5em;
+}
+
+h2,
+h3 {
+  color: black;
+  font-family: 	Courier New;
+  margin: 10px;
+  font-size: 1.5em;
 }
 
 p {
-  color: red;
+  color: grey;
+  font-size: 1.2em;
+  margin: 10px;
+  text-align: left;
 }
+
 
 ul {
  list-style-type: none;
@@ -18,7 +32,6 @@ ul {
  overflow: hidden;
  background-color: white;
 }
-
 
 li {
  float: left;
@@ -33,7 +46,7 @@ li:last-child {
 
 li a {
  display: block;
- color: grey;
+ color: black;
  text-align: left;
  padding: 15px 17px;
  text-decoration: none;
@@ -42,9 +55,13 @@ li a {
 
 /* Links will change color when hovered over */
 li a:hover {
- background-color: #FFFFFF;
+ background-color: #a09f9f;
 }
 
 .active {
- background-color: #FFFFFF;
+ background-color: #a09f9f;
+}
+.padded img {
+padding-left: 10px;
+padding-right: 10px;
 }
