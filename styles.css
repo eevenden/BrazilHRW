@@ -1,0 +1,50 @@
+body {
+  background-color: white;
+}
+
+h1 {
+  color: black;
+  font-family: 	Courier New;
+}
+
+p {
+  color: red;
+}
+
+ul {
+ list-style-type: none;
+ margin: 1px;
+ padding: 1px;
+ overflow: hidden;
+ background-color: white;
+}
+
+
+li {
+ float: left;
+ border-right: 2px solid white;
+ font-family:	Courier New;
+}
+
+/* Add a border to all( but not the last) list items */
+li:last-child {
+ border-right: none;
+}
+
+li a {
+ display: block;
+ color: grey;
+ text-align: left;
+ padding: 15px 17px;
+ text-decoration: none;
+ font-family:	Courier New;
+}
+
+/* Links will change color when hovered over */
+li a:hover {
+ background-color: #FFFFFF;
+}
+
+.active {
+ background-color: #FFFFFF;
+}
