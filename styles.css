@@ -4,7 +4,7 @@ body {
   padding: 3;
 }
 h1 {
-  color: black;
+  color: #0c87cf;
   font-family: 	Helvetica;
   font-size: 2.5em;
 }
@@ -55,11 +55,11 @@ li a {
 
 /* Links will change color when hovered over */
 li a:hover {
- background-color: #0c79ab;
+ background-color: #0c87cf;
 }
 
 .active {
- background-color: #0c79ab;
+ background-color: ##0c87cf;
 }
 .padded img {
 padding-left: 10px;
