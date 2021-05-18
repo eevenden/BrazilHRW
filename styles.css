@@ -5,14 +5,14 @@ body {
 }
 h1 {
   color: black;
-  font-family: 	Courier New;
+  font-family: 	Helvetica;
   font-size: 2.5em;
 }
 
 h2,
 h3 {
   color: black;
-  font-family: 	Courier New;
+  font-family: 	Helvetica;
   margin: 10px;
   font-size: 1.5em;
 }
@@ -36,7 +36,7 @@ ul {
 li {
  float: left;
  border-right: 2px solid white;
- font-family:	Courier New;
+ font-family:	Helvetica;
 }
 
 /* Add a border to all( but not the last) list items */
@@ -50,16 +50,16 @@ li a {
  text-align: left;
  padding: 15px 17px;
  text-decoration: none;
- font-family:	Courier New;
+ font-family:	Helvetica;
 }
 
 /* Links will change color when hovered over */
 li a:hover {
- background-color: #a09f9f;
+ background-color: #0c79ab;
 }
 
 .active {
- background-color: #a09f9f;
+ background-color: #0c79ab;
 }
 .padded img {
 padding-left: 10px;
