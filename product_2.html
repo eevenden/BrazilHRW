@@ -92,15 +92,15 @@
   <!-- active class displays the grey box around current page-->
   <ul>
     <li><a href="index.html" target="_self">Introduction</a></li>
-    <li><a href="product_1"target="_self">Product 1</a></li>
-    <li><a class="active" href="product_2" target="_self">Product 2</a></li>
+    <li><a class="active" href="product_1"target="_self">Product 1</a></li>
+    <li><a href="product_2" target="_self">Product 2</a></li>
     <li><a href="product_3" target="_self">Product 3</a></li>
     <li><a href="product_4" target="_self">Product 4</a></li>
     <li><a href="contact" target="_self">Contact</a></li>
   </ul>
   <br>
   
-<h2> Projects in the Amazon
+<h2> Environmental Justice Projects in the Amazon
   </h2>
   <br>
   
@@ -121,19 +121,18 @@
       
  //add mapbox token
 
-    mapboxgl.accessToken =  'pk.eyJ1IjoiZ3JwYXBwYWxhcmRvIiwiYSI6ImNrbjk4eDUzZDA4emwycG9oNGgwd2d1ZXoifQ.dhSdtyE_eokJMYVaDAXDmg'; //Mapbox token
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZ3JwYXBwYWxhcmRvIiwiYSI6ImNrbjk4eDUzZDA4emwycG9oNGgwd2d1ZXoifQ.dhSdtyE_eokJMYVaDAXDmg'; //Mapbox token
     var map = new mapboxgl.Map({
       container: 'map', // container id
-      style:  'mapbox://styles/grpappalardo/ckox89ohu1aui18pk0f7xxnsb', // replace with new basemap
-      center: [, ], //new coordinates
-      zoom: 10, // apply new zoom
+      style: 'mapbox://styles/grpappalardo/ckox89ohu1aui18pk0f7xxnsb', 
+      center: [0, -53],
+      zoom: 10, 
       transformRequest: transformRequest //see if this is needed
     });
       
        $(document).ready(function () {
       $.ajax({
         type: "GET",
-        //YOUR TURN: Replace with csv export link
         url: 'https://docs.google.com/spreadsheets/d/1BnuYrNQsD8oW5tWX-iKix5FuEyB7AP8GMndQWu43MPE/gviz/tq?tqx=out:csv&sheet=Projects',
         dataType: "text",
         success: function (csvData) { makeGeoJSON(csvData); }
@@ -156,8 +155,8 @@
                 'data': data
               },
               'paint': {
-                'circle-radius': 8,
-                'circle-color': "blue"
+                'circle-radius': 5,
+                'circle-color': "green"
               }
             });
             
