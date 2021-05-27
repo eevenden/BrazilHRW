@@ -157,7 +157,7 @@
               },
               'paint': {
                 'circle-radius': 5,
-                'circle-color': "green"
+                'circle-color': "yellow"
               }
             });
             
@@ -169,7 +169,7 @@
               //set popup text
               //You can adjust the values of the popup to match the headers of your CSV.
               // For example: e.features[0].properties.Name is retrieving information from the field Name in the original CSV.
-              var description = `<h3>` + e.features[0].properties.City + `</h3>` + `<h4>` + `<b>` + `State: ` + `</b>` + e.features[0].properties.State + `</h4>` + `<h4>` + `<b>` + `Country: ` + `</b>` + e.features[0].properties.Country + `</h4>`+ `Description: ` + `</b>` + e.features[0].properties.Description + `</h4>`+ + `Link: ` + `</b>` + e.features[0].properties.Link + `</h4>`;
+              var description = `Project_Name: ` + `</b>` + e.features[0].properties.Project_Name + `</h4>` + `<h4>` + `<b>`  + `State: ` + `</b>` + e.features[0].properties.State + `</h4>` + `<h4>` + `<b>` + `Country: ` + `</b>` + e.features[0].properties.Country + `</h4>`+ `Description: ` + `</b>` + e.features[0].properties.Description + `</h4>`+ + `URL: ` + `</b>` + e.features[0].properties.URL + `</h4>`;
               //Ensure that if the map is zoomed out such that multiple copies of the feature are visible, the popup appears over the copy being pointed to.   
               
              
