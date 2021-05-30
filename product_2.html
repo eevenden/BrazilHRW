@@ -152,7 +152,7 @@
       style: 'mapbox://styles/luke8542/ckp8se3a80yta18ql1fodlh6s',
       transformRequest: transformRequest
     });
-    
+
       // Add zoom and rotation controls to the map.
       map.addControl(new mapboxgl.NavigationControl());
 
@@ -200,21 +200,16 @@
                 'circle-opacity': 0,
               },
             });
-
-                var layers = [
-                'Conservation',
-                'Resistance to Extraction',
-                'Tree Planting',
-                ];
-                var colors = [
-                '#75f122',
-                '#3b2be9',
-                '#ea5353',
-                ];
-                // create legend
-                for (i = 0; i < layers.length; i++) {
-                var layer = layers[i];
-                var color = colors[i];
+//thank you to Aaron Deibele for this suggested array format
+              const layers = [
+                  ['Extraction Resistance', '#3b2be9'],
+                  ['Conservation', '#75f122'],
+                  ['Tree Planting', '#ea5353']
+              ];
+              // create legend
+                for (let elem of layers) {
+                var layer = elem[0];
+                var color = elem[1];
                 var item = document.createElement('div');
                 var key = document.createElement('span');
                 key.className = 'legend-key';
@@ -225,6 +220,8 @@
                 item.appendChild(key);
                 item.appendChild(value);
                 legend.appendChild(item);
+                legend.style.width = '180px';
+                legend.style.height = '60px';
                 }
        // When a click event occurs on a feature in the csvData layer, open a popup at the
             // location of the feature, with description HTML from its properties.
